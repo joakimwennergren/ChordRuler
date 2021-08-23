@@ -1,0 +1,317 @@
+//
+//  ChoordData.swift
+//  Chord Ruler
+//
+//  Created by Joakim Wennergren on 2021-08-21.
+//
+
+import SwiftUI
+
+let MajorChoords: [Arrangement] = [
+    Arrangement(
+        base_note: "Fb",
+        dots: [
+            Dot(x: 2.5, y: 1, scale: 1, hidden: true),
+            Dot(x: 2, y: -10, scale: 1, hidden: true),
+            Dot(x: 1.5, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: 0, y: 1, scale: 1, hidden: false),
+            Dot(x: 3, y: 1, scale: 1, hidden: true),
+            Dot(x: 2.5, y: -10, scale: 1, hidden: true),
+            Dot(x: 2, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: false),
+            Dot(x: 0, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: -1, y: 1, scale: 1, hidden: false),
+        ],
+        matched: ["Cb", "Gb", "Gb7", "Eb7", "Dbm", "Abm"]
+    ),
+    Arrangement(
+        base_note: "Cb",
+        dots: [
+            Dot(x: 2.5, y: 1, scale: 1, hidden: true),
+            Dot(x: 2, y: -10, scale: 1, hidden: true),
+            Dot(x: 1.5, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: false),
+            Dot(x: 0, y: 1, scale: 1, hidden: true),
+            Dot(x: 3, y: 1, scale: 1, hidden: true),
+            Dot(x: 2.5, y: -10, scale: 1, hidden: false),
+            Dot(x: 2, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: 0, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: -1, y: 1, scale: 1, hidden: false),
+        ],
+        matched: ["Gb", "Db", "Db7", "Bb7", "Abm", "Ebm"]
+    ),
+    Arrangement(
+        base_note: "Gb",
+        dots: [
+            Dot(x: 2.5, y: 1, scale: 1, hidden: true),
+            Dot(x: 2, y: -10, scale: 1, hidden: false),
+            Dot(x: 1.5, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: 0, y: 1, scale: 1, hidden: true),
+            Dot(x: 3, y: 1, scale: 1, hidden: true),
+            Dot(x: 2.5, y: -10, scale: 1, hidden: false),
+            Dot(x: 2, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: 0, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: false),
+            Dot(x: -1, y: 1, scale: 1, hidden: true),
+        ],
+        matched: ["Db", "Ab", "Ab7", "F7", "Ebm", "Bbm"]
+    ),
+    Arrangement(
+        base_note: "Db",
+        dots: [
+            Dot(x: 2.5, y: 1, scale: 1, hidden: true),
+            Dot(x: 2, y: -10, scale: 1, hidden: false),
+            Dot(x: 1.5, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: 0, y: 1, scale: 1, hidden: true),
+            Dot(x: 3, y: 1, scale: 1, hidden: false),
+            Dot(x: 2.5, y: -10, scale: 1, hidden: true),
+            Dot(x: 2, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: false),
+            Dot(x: 0, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: -1, y: 1, scale: 1, hidden: true),
+        ],
+        matched: ["Ab", "Eb", "Eb7", "C7", "Bbm", "Fm"]
+    ),
+    Arrangement(
+        base_note: "Ab",
+        dots: [
+            Dot(x: 2.5, y: 1, scale: 1, hidden: false),
+            Dot(x: 2, y: -10, scale: 1, hidden: true),
+            Dot(x: 1.5, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: false),
+            Dot(x: 0, y: 1, scale: 1, hidden: true),
+            Dot(x: 3, y: 1, scale: 1, hidden: true),
+            Dot(x: 2.5, y: -10, scale: 1, hidden: true),
+            Dot(x: 2, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: false),
+            Dot(x: 0, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: -1, y: 1, scale: 1, hidden: true),
+        ],
+        matched: ["Eb", "Bb", "Bb7", "G7", "Fm", "Cm"]
+    ),
+    Arrangement(
+        base_note: "Eb",
+        dots: [
+            Dot(x: 2.5, y: 1, scale: 1, hidden: true),
+            Dot(x: 2, y: -10, scale: 1, hidden: true),
+            Dot(x: 1.5, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: false),
+            Dot(x: 0, y: 1, scale: 1, hidden: true),
+            Dot(x: 3, y: 1, scale: 1, hidden: true),
+            Dot(x: 2.5, y: -10, scale: 1, hidden: true),
+            Dot(x: 2, y: 1, scale: 1, hidden: false),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: 0, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: false),
+            Dot(x: -1, y: 1, scale: 1, hidden: true),
+        ],
+        matched: ["Bb", "F", "F7", "D7", "Cm", "Gm"]
+    ),
+    Arrangement(
+        base_note: "Bb",
+        dots: [
+            Dot(x: 2.5, y: 1, scale: 1, hidden: true),
+            Dot(x: 2, y: -10, scale: 1, hidden: true),
+            Dot(x: 1.5, y: 1, scale: 1, hidden: false),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: 0, y: 1, scale: 1, hidden: true),
+            Dot(x: 3, y: 1, scale: 1, hidden: false),
+            Dot(x: 2.5, y: -10, scale: 1, hidden: true),
+            Dot(x: 2, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: 0, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: false),
+            Dot(x: -1, y: 1, scale: 1, hidden: true),
+        ],
+        matched: ["F", "C", "C7", "A7", "Gm", "Dm"]
+    ),
+    Arrangement(
+        base_note: "F",
+        dots: [
+            Dot(x: 2.5, y: 1, scale: 1, hidden: false),
+            Dot(x: 2, y: -10, scale: 1, hidden: true),
+            Dot(x: 1.5, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: 0, y: 1, scale: 1, hidden: true),
+            Dot(x: 3, y: 1, scale: 1, hidden: false),
+            Dot(x: 2.5, y: -10, scale: 1, hidden: true),
+            Dot(x: 2, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: 0, y: 1, scale: 1, hidden: false),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: -1, y: 1, scale: 1, hidden: true),
+        ],
+        matched: ["C", "G", "G7", "E7", "Dm", "Am"]
+    ),
+    Arrangement(
+        base_note: "C",
+        dots: [
+            Dot(x: 2.5, y: 1, scale: 1, hidden: false),
+            Dot(x: 2, y: -10, scale: 1, hidden: true),
+            Dot(x: 1.5, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: 0, y: 1, scale: 1, hidden: false),
+            Dot(x: 3, y: 1, scale: 1, hidden: true),
+            Dot(x: 2.5, y: -10, scale: 1, hidden: true),
+            Dot(x: 2, y: 1, scale: 1, hidden: false),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: 0, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: -1, y: 1, scale: 1, hidden: true),
+        ],
+        matched: ["G", "D", "D7", "B7", "Am", "Em"]
+    ),
+    Arrangement(
+        base_note: "G",
+        dots: [
+            Dot(x: 2.5, y: 1, scale: 1, hidden: true),
+            Dot(x: 2, y: -10, scale: 1, hidden: true),
+            Dot(x: 1.5, y: 1, scale: 1, hidden: false),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: 0, y: 1, scale: 1, hidden: true),
+            Dot(x: 3, y: 1, scale: 1, hidden: true),
+            Dot(x: 2.5, y: -10, scale: 1, hidden: false),
+            Dot(x: 2, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: 0, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: -1, y: 1, scale: 1, hidden: false),
+        ],
+        matched: ["D", "A", "A7", "F#7", "Em", "Bm"]
+    ),
+    Arrangement(
+        base_note: "D",
+        dots: [
+            Dot(x: 2.5, y: 1, scale: 1, hidden: true),
+            Dot(x: 2, y: -10, scale: 1, hidden: true),
+            Dot(x: 1.5, y: 1, scale: 1, hidden: false),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: 0, y: 1, scale: 1, hidden: true),
+            Dot(x: 3, y: 1, scale: 1, hidden: true),
+            Dot(x: 2.5, y: -10, scale: 1, hidden: false),
+            Dot(x: 2, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: 0, y: 1, scale: 1, hidden: false),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: -1, y: 1, scale: 1, hidden: true),
+        ],
+        matched: ["A", "E", "E7", "C#7", "Bm", "F#m"]
+    ),
+    Arrangement(
+        base_note: "A",
+        dots: [
+            Dot(x: 2.5, y: 1, scale: 1, hidden: true),
+            Dot(x: 2, y: -10, scale: 1, hidden: false),
+            Dot(x: 1.5, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: 0, y: 1, scale: 1, hidden: false),
+            Dot(x: 3, y: 1, scale: 1, hidden: true),
+            Dot(x: 2.5, y: -10, scale: 1, hidden: true),
+            Dot(x: 2, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: 0, y: 1, scale: 1, hidden: false),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: -1, y: 1, scale: 1, hidden: true),
+        ],
+        matched: ["E", "B", "B7", "G#7", "F#m", "C#m"]
+    ),
+    Arrangement(
+        base_note: "E",
+        dots: [
+            Dot(x: 2.5, y: 1, scale: 1, hidden: true),
+            Dot(x: 2, y: -10, scale: 1, hidden: true),
+            Dot(x: 1.5, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: 0, y: 1, scale: 1, hidden: false),
+            Dot(x: 3, y: 1, scale: 1, hidden: true),
+            Dot(x: 2.5, y: -10, scale: 1, hidden: true),
+            Dot(x: 2, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: false),
+            Dot(x: 0, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: -1, y: 1, scale: 1, hidden: false),
+        ],
+        matched: ["B", "F#", "F#7", "D#7", "C#m", "G#m"]
+    ),
+    Arrangement(
+        base_note: "B",
+        dots: [
+            Dot(x: 2.5, y: 1, scale: 1, hidden: true),
+            Dot(x: 2, y: -10, scale: 1, hidden: true),
+            Dot(x: 1.5, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: false),
+            Dot(x: 0, y: 1, scale: 1, hidden: true),
+            Dot(x: 3, y: 1, scale: 1, hidden: true),
+            Dot(x: 2.5, y: -10, scale: 1, hidden: false),
+            Dot(x: 2, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: 0, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: -1, y: 1, scale: 1, hidden: false),
+        ],
+        matched: ["F#", "C#", "C#7", "G#m"]
+    ),
+    Arrangement(
+        base_note: "F#",
+        dots: [
+            Dot(x: 2.5, y: 1, scale: 1, hidden: true),
+            Dot(x: 2, y: -10, scale: 1, hidden: false),
+            Dot(x: 1.5, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: 0, y: 1, scale: 1, hidden: true),
+            Dot(x: 3, y: 1, scale: 1, hidden: true),
+            Dot(x: 2.5, y: -10, scale: 1, hidden: false),
+            Dot(x: 2, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: 0, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: false),
+            Dot(x: -1, y: 1, scale: 1, hidden: true),
+        ],
+        matched: ["C#", "G#", "G#7"]
+    ),
+    Arrangement(
+        base_note: "C#",
+        dots: [
+            Dot(x: 2.5, y: 1, scale: 1, hidden: true),
+            Dot(x: 2, y: -10, scale: 1, hidden: false),
+            Dot(x: 1.5, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: 0, y: 1, scale: 1, hidden: true),
+            Dot(x: 3, y: 1, scale: 1, hidden: false),
+            Dot(x: 2.5, y: -10, scale: 1, hidden: true),
+            Dot(x: 2, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: false),
+            Dot(x: 0, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: -1, y: 1, scale: 1, hidden: true),
+        ],
+        matched: ["G#", "D#7"]
+    ),
+    Arrangement(
+        base_note: "G#",
+        dots: [
+            Dot(x: 2.5, y: 1, scale: 1, hidden: false),
+            Dot(x: 2, y: -10, scale: 1, hidden: true),
+            Dot(x: 1.5, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: false),
+            Dot(x: 0, y: 1, scale: 1, hidden: true),
+            Dot(x: 3, y: 1, scale: 1, hidden: true),
+            Dot(x: 2.5, y: -10, scale: 1, hidden: true),
+            Dot(x: 2, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: false),
+            Dot(x: 0, y: 1, scale: 1, hidden: true),
+            Dot(x: 1, y: -10, scale: 1, hidden: true),
+            Dot(x: -1, y: 1, scale: 1, hidden: true),
+        ],
+        matched: []
+    ),
+]

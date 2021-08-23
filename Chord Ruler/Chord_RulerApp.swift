@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct Chord_RulerApp: App {
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

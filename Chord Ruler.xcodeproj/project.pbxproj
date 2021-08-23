@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF083B9D26D18B65009B0B20 /* Choord.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF083B9C26D18B65009B0B20 /* Choord.swift */; };
+		EF083B9F26D18E94009B0B20 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF083B9E26D18E94009B0B20 /* Row.swift */; };
+		EF083BA526D1B590009B0B20 /* whenHovered.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF083BA426D1B590009B0B20 /* whenHovered.swift */; };
+		EF083BA726D25EFF009B0B20 /* Dot.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF083BA626D25EFF009B0B20 /* Dot.swift */; };
+		EF083BA926D261A2009B0B20 /* MajorChoords.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF083BA826D261A2009B0B20 /* MajorChoords.swift */; };
+		EF083BAB26D261B9009B0B20 /* SubdominantChoords.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF083BAA26D261B9009B0B20 /* SubdominantChoords.swift */; };
+		EF083BAD26D261D5009B0B20 /* Arrangement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF083BAC26D261D5009B0B20 /* Arrangement.swift */; };
+		EF083BAF26D2620A009B0B20 /* MinorChoords.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF083BAE26D2620A009B0B20 /* MinorChoords.swift */; };
 		EF4E451826D12A0C0009A63F /* Chord_RulerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E451726D12A0C0009A63F /* Chord_RulerApp.swift */; };
 		EF4E451A26D12A0C0009A63F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E451926D12A0C0009A63F /* ContentView.swift */; };
 		EF4E451C26D12A0D0009A63F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF4E451B26D12A0D0009A63F /* Assets.xcassets */; };
@@ -14,6 +22,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF083B9C26D18B65009B0B20 /* Choord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choord.swift; sourceTree = "<group>"; };
+		EF083B9E26D18E94009B0B20 /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
+		EF083BA426D1B590009B0B20 /* whenHovered.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whenHovered.swift; sourceTree = "<group>"; };
+		EF083BA626D25EFF009B0B20 /* Dot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dot.swift; sourceTree = "<group>"; };
+		EF083BA826D261A2009B0B20 /* MajorChoords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorChoords.swift; sourceTree = "<group>"; };
+		EF083BAA26D261B9009B0B20 /* SubdominantChoords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubdominantChoords.swift; sourceTree = "<group>"; };
+		EF083BAC26D261D5009B0B20 /* Arrangement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrangement.swift; sourceTree = "<group>"; };
+		EF083BAE26D2620A009B0B20 /* MinorChoords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinorChoords.swift; sourceTree = "<group>"; };
 		EF4E451426D12A0C0009A63F /* Chord Ruler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chord Ruler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF4E451726D12A0C0009A63F /* Chord_RulerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chord_RulerApp.swift; sourceTree = "<group>"; };
 		EF4E451926D12A0C0009A63F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +50,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF083B9B26D18B56009B0B20 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				EF083B9C26D18B65009B0B20 /* Choord.swift */,
+				EF083B9E26D18E94009B0B20 /* Row.swift */,
+				EF083BA626D25EFF009B0B20 /* Dot.swift */,
+				EF083BAC26D261D5009B0B20 /* Arrangement.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		EF083BA026D1AB82009B0B20 /* Choords */ = {
+			isa = PBXGroup;
+			children = (
+				EF083BA826D261A2009B0B20 /* MajorChoords.swift */,
+				EF083BAA26D261B9009B0B20 /* SubdominantChoords.swift */,
+				EF083BAE26D2620A009B0B20 /* MinorChoords.swift */,
+			);
+			path = Choords;
+			sourceTree = "<group>";
+		};
+		EF083BA326D1B585009B0B20 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EF083BA426D1B590009B0B20 /* whenHovered.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		EF4E450B26D12A0C0009A63F = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +98,9 @@
 		EF4E451626D12A0C0009A63F /* Chord Ruler */ = {
 			isa = PBXGroup;
 			children = (
+				EF083BA326D1B585009B0B20 /* Extensions */,
+				EF083BA026D1AB82009B0B20 /* Choords */,
+				EF083B9B26D18B56009B0B20 /* Structs */,
 				EF4E451726D12A0C0009A63F /* Chord_RulerApp.swift */,
 				EF4E451926D12A0C0009A63F /* ContentView.swift */,
 				EF4E451B26D12A0D0009A63F /* Assets.xcassets */,
@@ -140,8 +188,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF083BAF26D2620A009B0B20 /* MinorChoords.swift in Sources */,
+				EF083B9F26D18E94009B0B20 /* Row.swift in Sources */,
+				EF083BAB26D261B9009B0B20 /* SubdominantChoords.swift in Sources */,
+				EF083BAD26D261D5009B0B20 /* Arrangement.swift in Sources */,
 				EF4E451A26D12A0C0009A63F /* ContentView.swift in Sources */,
+				EF083BA726D25EFF009B0B20 /* Dot.swift in Sources */,
+				EF083BA526D1B590009B0B20 /* whenHovered.swift in Sources */,
 				EF4E451826D12A0C0009A63F /* Chord_RulerApp.swift in Sources */,
+				EF083BA926D261A2009B0B20 /* MajorChoords.swift in Sources */,
+				EF083B9D26D18B65009B0B20 /* Choord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +336,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "bitsanddivs.com.Chord-Ruler";
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = se.databeams.chordruler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -304,8 +360,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "bitsanddivs.com.Chord-Ruler";
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = se.databeams.chordruler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
